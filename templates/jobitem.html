@@ -1,0 +1,19 @@
+<div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 8px;">
+  <div class="col-11">
+  <h4 
+    style="color: rgb(100,100,100); margin-bottom:               4px;">
+    {{job['title']}}</h4>
+  <div>
+    <b>Location:</b> {{job['location']}}
+  </div>
+  {% if 'salary' in job %}
+  <div>
+    <b>Salary:</b> {{job['salary']}}
+  </div>
+  {% endif %}
+  </div>
+  <div class="col-1">
+  <a href="mailto:yathish.shirali@cavotec.com?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%3Center%20your%20name%3E%0D%0A%0D%0AMy%20resume%3A%20%3Center%20your%20resume%20link%3E%0D%0A%0D%0AMy%20LinkedIn%3A%20%3Center%20your%20LinkedIn%20URL%3E" type="button" class="btn btn-outline-primary">Apply</a>
+  </div>
+
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cavotec Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
+    <style>
+      #banner{
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://c3b23840-7310-45fe-b47e-6b6a6a24d805-00-3c0rjg78tt8pc.sisko.replit.dev/static/banner2.jpg" height= "400">
+    
+    <div class= "container">
+      
+    
+   <h1 class="text-center  mt-2, mb-4">{{company_name}} Careers</h1>
+
+    
+  <h2 class="text-center mt-2, mb-4">About Cavotec</h2>
+      <div class="row" style="margin-bottom: 16px; padding-bottom: 8px;">
+        <div class="col-md-6">
+    <p class="lead">
+      Cavotec wants to contribute to a future world that is cleaner, safer and more efficient by providing innovative connection and electrification solutions to enable the decarbonization of ports and industrial applications. 
+      
+      We thrive by shaping future expectations in the areas we are active in. Our credibility comes from our application expertise, dedication to innovation and world class operations. Our success rests on the core values we live by; Integrity, Accountability, Performance and Team Work.
+
+      Cavotec’s personnel, located in some 30 countries around the world, represent a large number of cultures, and provide customers with local support, backed by the Group’s global network of engineering expertise.
+    </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/team.jpg" class="img-fluid"  alt="Team Image" style="height:320px; border-radius:4px ">
+        </div>
+      </div>
+    <h2 class="text-center mt-2, mb-4">Job Openings</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+      
+      
+    <div class = "text-center">
+      <a  class="btn btn-primary btn-lg" href="mailto:yathish.shirali@cavotec.com?subject=Question%20About%20Job%20Openings&body=My%20name%3A%3Center%20your%20name%3E%0D%0A%0D%0AMy%20Question%3A%20%3CEnter%20your%20Questions%3E" type="button">Contact Us</a>
+
+     
+    </div>
+      </div>
+     {% include 'footer.html' %}
+  </body>
+</html>
