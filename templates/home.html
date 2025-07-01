@@ -2,27 +2,18 @@
 <html>
   <head>
     <title>Cavotec Careers</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
-    <style>
-      #banner{
-        height: 360px;
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 16px;
-      }
-    </style>
+    {% include 'bootstrap.html' %}
+    
   </head>
   
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id="banner" src="https://c3b23840-7310-45fe-b47e-6b6a6a24d805-00-3c0rjg78tt8pc.sisko.replit.dev/static/banner2.jpg" height= "400">
     
+    {% include 'banner.html' %}
     <div class= "container">
       
     
-   <h1 class="text-center  mt-2, mb-4">{{company_name}} Careers</h1>
+   <h1 class="text-center  mt-2, mb-4">Cavotec Careers</h1>
 
     
   <h2 class="text-center mt-2, mb-4">About Cavotec</h2>
