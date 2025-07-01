@@ -1,2 +1,2 @@
-# joviansWebsite-flask
+# jCavotecCareers-flask
 a careers website for jovian
