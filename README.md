@@ -2,8 +2,6 @@
 a careers website for Cavotec
 https://cavotec-careers.onrender.com/
 
-# Cavotec Careers
-
 A simple web application to manage and display job openings for Cavotec. Built with HTML, CSS and Flask.
 
 ---
